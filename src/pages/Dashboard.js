@@ -38,7 +38,7 @@ function Dashboard() {
         try {
 
             const response = await axios.get(
-                "http://localhost:8080/api/posts"
+                "https://codesphere-backend-production-2d28.up.railway.app/api/posts"
             );
 
             setPosts(response.data);
@@ -66,7 +66,7 @@ function Dashboard() {
         try {
 
             const response = await axios.get(
-                `http://localhost:8080/api/comments/${postId}`
+                `https://codesphere-backend-production-2d28.up.railway.app/api/comments/${postId}`
             );
 
             setComments((prev) => ({
@@ -91,7 +91,7 @@ function Dashboard() {
         );
 
         await axios.put(
-            `http://localhost:8080/api/posts/${id}/like?userId=${user.id}`
+            `https://codesphere-backend-production-2d28.up.railway.app/api/posts/${id}/like?userId=${user.id}`
         );
 
         fetchPosts();
@@ -113,7 +113,7 @@ function Dashboard() {
         try {
 
             await axios.post(
-                "http://localhost:8080/api/comments",
+                "https://codesphere-backend-production-2d28.up.railway.app/api/comments",
                 {
                     postId,
                     text: newComment[postId]
@@ -151,7 +151,7 @@ function Dashboard() {
 
 
 await axios.delete(
-    `http://localhost:8080/api/posts/${id}?userId=${user.id}`
+    `https://codesphere-backend-production-2d28.up.railway.app/api/posts/${id}?userId=${user.id}`
 );
 
             toast.success("Post Deleted Successfully");
@@ -193,7 +193,7 @@ await axios.delete(
 
 
 await axios.put(
-    `http://localhost:8080/api/posts/${id}?userId=${user.id}`,
+    `https://codesphere-backend-production-2d28.up.railway.app/api/posts/${id}?userId=${user.id}`,
                 {
                     title: updatedTitle,
                     content: updatedContent

@@ -28,7 +28,7 @@ function Register() {
         try {
 
             await axios.post(
-                "http://localhost:8080/api/auth/register",
+                "https://codesphere-backend-production-2d28.up.railway.app/api/auth/register",
                 {
                     name,
                     email,

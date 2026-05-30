@@ -22,7 +22,7 @@ function Profile() {
 
             const response =
                 await axios.get(
-                    `http://localhost:8080/api/posts/user/${user.id}`
+                    `https://codesphere-backend-production-2d28.up.railway.app/api/posts/user/${user.id}`
                 );
 
             setMyPosts(response.data);

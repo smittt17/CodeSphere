@@ -66,7 +66,7 @@ formData.append(
 );
 
             await axios.post(
-                "http://localhost:8080/api/posts",
+                "https://codesphere-backend-production-2d28.up.railway.app/api/posts",
                 formData,
                 {
                     headers: {

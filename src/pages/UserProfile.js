@@ -20,7 +20,7 @@ function UserProfile() {
         try {
 
             const response = await axios.get(
-                `http://localhost:8080/api/auth/user/${id}`
+                `https://codesphere-backend-production-2d28.up.railway.app/api/auth/user/${id}`
             );
 
             setUser(response.data);

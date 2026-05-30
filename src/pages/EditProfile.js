@@ -36,7 +36,7 @@ function EditProfile() {
                 imageData.append("userId", user.id);
 
                 const imageResponse = await axios.post(
-                    "http://localhost:8080/api/upload/profile-image",
+                    "https://codesphere-backend-production-2d28.up.railway.app/api/upload/profile-image",
                     imageData
                 );
 
@@ -45,7 +45,7 @@ function EditProfile() {
             }
 
             const response = await axios.put(
-                `http://localhost:8080/api/auth/user/${user.id}`,
+                `https://codesphere-backend-production-2d28.up.railway.app/api/auth/user/${user.id}`,
                 formData
             );
 
