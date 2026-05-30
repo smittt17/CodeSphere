@@ -11,10 +11,9 @@ function Profile() {
     const [myPosts, setMyPosts] = useState([]);
 
     useEffect(() => {
-
-        fetchMyPosts();
-
-    }, []);
+    fetchMyPosts();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+}, []);
 
     const fetchMyPosts = async () => {
 

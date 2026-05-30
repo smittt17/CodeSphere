@@ -26,10 +26,9 @@ function Dashboard() {
 );
 
     useEffect(() => {
-
-        fetchPosts();
-
-    }, []);
+    fetchPosts();
+    // eslint-disable-next-line
+}, []);
 
     // FETCH POSTS
 
@@ -143,7 +142,7 @@ function Dashboard() {
 
         try {
 
-            const token = localStorage.getItem("token");
+            localStorage.getItem("token");
 
             const user = JSON.parse(
     localStorage.getItem("user")
