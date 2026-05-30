@@ -27,7 +27,7 @@ function Dashboard() {
 
     useEffect(() => {
     fetchPosts();
-    // eslint-disable-next-line
+    // eslint-disable-next-line react-hooks/exhaustive-deps
 }, []);
 
     // FETCH POSTS
@@ -142,7 +142,6 @@ function Dashboard() {
 
         try {
 
-            localStorage.getItem("token");
 
             const user = JSON.parse(
     localStorage.getItem("user")

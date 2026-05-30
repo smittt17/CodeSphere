@@ -11,7 +11,8 @@ function UserProfile() {
 
     useEffect(() => {
     fetchUser();
-}, []); // eslint-disable-line
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+}, []);
 
     const fetchUser = async () => {
 
