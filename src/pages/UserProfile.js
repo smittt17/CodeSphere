@@ -10,10 +10,8 @@ function UserProfile() {
     const [user, setUser] = useState(null);
 
     useEffect(() => {
-
-        fetchUser();
-
-    }, []);
+    fetchUser();
+}, []); // eslint-disable-line
 
     const fetchUser = async () => {
 
