@@ -50,22 +50,6 @@ https://codesphere-backend-production-2d28.up.railway.app
 
 ---
 
-## Screenshots
-
-### Login Page
-(Add screenshot here)
-
-### Dashboard
-(Add screenshot here)
-
-### User Profile
-(Add screenshot here)
-
-### Create Post
-(Add screenshot here)
-
----
-
  Installation
 
 ### Frontend
